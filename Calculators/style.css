@@ -1,0 +1,44 @@
+BODY {
+	FONT-SIZE: 8pt; BACKGROUND: linear-gradient(#FFFFFF, #D0D0D0); COLOR: #000000; FONT-FAMILY: Verdana;
+}
+DIV.h1 {
+	FONT-SIZE: 9pt; FONT-FAMILY: Verdana;COLOR: rgb(0,150,255);
+}
+DIV.h2 {
+	FONT-SIZE: 9pt; FONT-FAMILY: Verdana; COLOR: #000000; 
+}
+DIV.h3 {
+	FONT-SIZE: 14pt; FONT-FAMILY: Verdana; COLOR: #FFFFFF;
+}
+#main
+{
+background-color: #DDDDDD;
+}
+#alter
+{
+background-color: #AAAAAA;
+}
+td, tr {
+    padding: 15px;
+}
+#pgtitle{
+    padding: 2px;
+}
+#error {
+COLOR: #FF0000;
+}
+TABLE {
+	FONT-SIZE: 10pt; BACKGROUND: #000000; COLOR: #000000; FONT-STYLE: normal; TEXT-DECORATION: none; padding:2;
+}
+table, th, td {
+    border: 1px solid black; border-radius: 5;
+}
+INPUT {
+	FONT-SIZE: 10pt; BORDER-LEFT-COLOR: #5c5c94; BORDER-BOTTOM-COLOR: #5c5c94; COLOR: white; BORDER-TOP-STYLE: none; BORDER-TOP-COLOR: #5c5c94; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #5e6e85; BORDER-RIGHT-COLOR: #5c5c94; BORDER-BOTTOM-STYLE: none
+}
+SELECT {
+	FONT-SIZE: 10pt; BORDER-LEFT-COLOR: #5c5c94; BORDER-BOTTOM-COLOR: #5c5c94; COLOR: white; BORDER-TOP-STYLE: none; BORDER-TOP-COLOR: #5c5c94; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #5e6e85; BORDER-RIGHT-COLOR: #5c5c94; BORDER-BOTTOM-STYLE: none
+}
+FORM {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana; 
+}

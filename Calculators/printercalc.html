@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="./printercalc.js"></script>
+<title>3D Printer Calculators</title>
+</head>
+<body>
+<center>
+<table width="480">
+<tr>
+<td id="pgtitle" align="center">
+<div class="h3">Calculators for 3D printer steps calibration, etc.</div>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td id="main" width="50%">
+<center><div class="h2">Calculate Steps (belt driven)</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="calcstepsbelt(this);">
+	<p><input placeholder="Motor Steps" title="Steps the motor needs for one full revolution."/>/ rev</p>
+	<p><select id="MicroStepping" class="form-control change">
+                <option value="1">1 full step</option>
+                <option value="2">1/2 step</option>
+                <option value="4">1/4 step</option>
+                <option value="8">1/8 &mu;Step </option>
+                <option value="16" selected>1/16 &mu;Step</option>
+                <option value="32">1/32 &mu;Step</option>
+                <option value="64">1/64 &mu;Step</option>
+              </select></p>
+	<p><input placeholder="Belt Pitch" title="Distance between teeth."/> mm</p>
+	<p><input placeholder="Pulley Teeth" title="How many teeth are on the pulley" /></p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Steps = <span>0 steps/mm</span></p>
+</form>
+</td>
+<td id="alter">
+<center><div class="h2">Calculate Steps (leadscrew driven)</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="calcstepsthread(this);">
+	<p><input placeholder="Motor Steps" title="Steps the motor needs for one full revolution."/>/ rev</p>
+	<p><select id="MicroStepping" class="form-control change">
+                <option value="1">1 full step</option>
+                <option value="2">1/2 step</option>
+                <option value="4">1/4 step</option>
+                <option value="8">1/8 &mu;Step </option>
+                <option value="16" selected>1/16 &mu;Step</option>
+                <option value="32">1/32 &mu;Step</option>
+                <option value="64">1/64 &mu;Step</option>
+              </select></p>
+	<p><input placeholder="Rod Pitch" title="Threads per millimetre of leadscrew." />threads / mm</p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Steps = <span>0 steps/mm</span></p>
+</form>
+</td>
+</tr>
+<tr>
+<td id="main" width="50%">
+<center><div class="h2">Calculate Steps (geared extruder)</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="calcextruder(this);">
+	<p><input placeholder="Motor Steps" title="Steps the motor needs for one full revolution."/>/ rev</p>
+	<p><select id="MicroStepping" class="form-control change">
+                <option value="1">1 full step</option>
+                <option value="2">1/2 step</option>
+                <option value="4">1/4 step</option>
+                <option value="8">1/8 &mu;Step </option>
+                <option value="16" selected>1/16 &mu;Step</option>
+                <option value="32">1/32 &mu;Step</option>
+                <option value="64">1/64 &mu;Step</option>
+              </select></p>
+	<p><input placeholder="Big Gear Teeth" title="Number of teeth on big gear." /></p>
+	<p><input placeholder="Small Gear Teeth" title="Number of teeth on small gear." /></p>
+	<p><input placeholder="Hob Diameter" title="Effective diameter of the hobbed bolt." /></p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Steps = <span>0 steps/mm</span></p>
+</form>
+</td>
+<td id="alter">
+<center><div class="h2">Calibrate Steps</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="newsteps(this);">
+	<p><input placeholder="Current Steps"/>/ mm</p>
+	<p><input placeholder="Distance Expected"/>mm</p>
+	<p><input placeholder="Actual Distance" />mm</p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Steps = <span>0 steps/mm</span></p>
+</form>
+</td>
+</tr>
+</table>
+<div id="footer">All mathematical formulas taken from <a href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide">Triffid Hunter's Calibration Guide</a></div>
+<div id="error"><br><br></div>
+</center>
+</body>
+</html>
