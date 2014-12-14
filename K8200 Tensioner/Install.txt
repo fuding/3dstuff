@@ -1,0 +1,44 @@
+K8200 / 3Drag printer Y belt tensioner.
+
+Installation can be done with the printer fully assembled. 
+You just need to remove the front crossmember to get at the bolt holding the alu bracket on for the original pulley. 
+
+You'll need:  
+1x M3 bolt 15mm long  
+2x M4 bolts 15mm long
+4x M4 washers  
+2x M4 nuts (locking or otherwise)  
+2x M3 bolts 10mm long  
+
+Optional (depending how big your fingers are)
+Pair of tweezers
+
+To install:  
+Remove front crossmember to gain access to the bolt holding the aluminium bearing bracket on.
+
+Remove original bearing (completely dismantle as we will use it again)  
+
+Slide the base in with the uprights facing the back of the printer and sit it against the front solid Y bar mount to keep it out of the way for now. 
+
+Slide the tensioner part in from the back of the printer. 
+Angle it up 90 degrees (with the single screw hole up in the air) and push it under the X axis rod.
+Give it a bit of a wiggle and gently bring it flat as you push it through.  
+
+Put an M4 washer on an M4 x 15mm bolt, insert into base from top, use printed washer on the bottom of the chassis, followed by an M4 washer and lock nut. 
+ 
+Use 2 x M3 10mm bolts through the uprights in the base, into the tensioner part. Don't over tighten, they are just a hinge. 
+
+Now take all the parts from the original bearing setup and insert the original M5 bolt into the tensioner with a small m5 washer. 
+
+Poke enough of the screw in to hold on to 3 washers. Put a small washer on, large washer, another small washer. 
+
+At this point make sure the belt is also in there. 
+
+Now insert the bearing using a pair of tweezers (don't damage it). 
+  
+Push more of the bolt through and put the other washers on: small washer, big washer, small washer.  
+
+Push the bolt all the way through and install another small washer and the locking nut.  
+
+Screw the remaining M3 15mm bolt into the single hole at the end of the tensioner arm and screw down until the desired belt tension is achieved.  
+
