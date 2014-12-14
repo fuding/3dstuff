@@ -1,0 +1,24 @@
+Start Code
+
+M92 E618.9 ; set extruder steps/mm
+;M92 X83.0 Y80.645 
+G91 ; Set relative mode
+G92 E0 ; Reset extruder position
+G1 Z10 F3000; lift Z 10mm to clear any clips holding the glass down
+G28 X0 Y0 ; Home X and Y Axis
+G28 Z0 ; Home Z axis to prevent ooze while heating
+M109 S[temperature] ; Heat extruder
+G1 Z5 E20 F300 ; PRIME EXTRUDER
+G92 E0; Reset extruder
+
+End Code
+
+G92 E0 ; Reset extruder position
+G1 E-4 F4000 ; retract filament
+M104 S0 ; turn off temperature
+M140 S0 ; turn off the bed
+G28 X0 Y0 ; Home X and Y
+G90 ; use absolute coordinates
+G1 X0 Y200 ; bring table to front for easy access to part
+; G1 Z0 ; home Z axis to prevent ooze - Disabled to prevent crashing into large objects
+M84     ; disable motors
