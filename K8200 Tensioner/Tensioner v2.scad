@@ -1,5 +1,4 @@
 //Y-Belt tensioner for a Velleman K8200 / 3Drag 3D Printer
-//Designed by: http://www.thingiverse.com/sampeople
 
 //HOW TO PRINT
 //Export each part individually (except the washers, both can be done together)
