@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="./skeincalc.js"></script>
+<title>Skeinforge Calculators</title>
+</head>
+<body>
+<center>
+<table width="480">
+<tr>
+<td id="pgtitle" align="center">
+<div class="h3">Calculators for Skeinforge Settings</div>
+</td>
+</tr>
+</table>
+<table width="500">
+<tr>
+<td id="main" width="50%">
+<center><div class="h2">Edge Width Over Height Ratio</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="edgewidth(this);">
+	<p><select id="MicroStepping" class="form-control change">
+                <option value="0.3">0.3mm</option>
+                <option value="0.35" selected>0.35mm</option>
+                <option value="0.4">0.4mm</option>
+                <option value="0.45">0.45mm</option>
+                <option value="0.5">0.5mm</option>
+              </select></p>
+	<p><input placeholder="Layer Height" title="Layer Height"/> mm</p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Edge width / layer height = <span>0</span></p>
+</form>
+</td>
+
+<td id="alter">
+<center><div class="h2">Number Of Solid Layers</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="solidlayers(this);">
+	<p><input placeholder="Desired Thickness" title="Desired Thickness"/> mm</p>	
+	<p><input placeholder="Layer Height" title="Layer Height"/> mm</p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p># of solid layers = <span>0</span></p>
+</form>
+</td>
+</tr>
+
+<tr>
+<td id="main" width="50%">
+<center><div class="h2" title="The height of the first layer will be Z0 + this value.">First Layer Height</div></center>
+<form action="javascript:void(null);" method="post" onSubmit="layerone(this);">
+	<p>Extrude -> Craft</p>
+	<p><input placeholder="Layer Height" title="Layer Height"/> mm</p>	
+	<p>Extrude -> Bottom</p>
+	<p><input placeholder="Additional Height" title="Additional Height over Layer Height"/> mm</p>	
+	<p><input placeholder="Altitude" title="Altitude"/> mm</p>
+	<p>Extrude -> Raft</p>
+	<p><input placeholder="Nozzle Lift" title="Operational Nozzle Lift"/> mm</p>
+	<p><input type="submit" value="Calculate" /></p>
+	<p>Height of Layer 1 = <span>0</span>mm</p>
+</form>
+</td>
+</tr>
+</table>
+<div id="footer">No guarantee of accuracy</div>
+<div id="error"><br><br></div>
+</center>
+</body>
+</html>
